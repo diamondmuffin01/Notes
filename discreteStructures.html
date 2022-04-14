@@ -1,0 +1,2014 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <style>
+
+
+
+    h3 {
+      text-align: center;
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+
+    h4 {
+      padding-left: 10px;
+    }
+
+
+
+
+
+
+
+      li {
+        margin: 30px;
+      }
+
+      .red-text {
+        color: red;
+        display: inline;
+      }
+
+      .b-mark {
+        background-color: #00f5df;
+        display: inline;
+      }
+
+
+
+
+
+
+    </style>
+
+    <body>
+
+      <div class="example">
+        <h1 class="tittles space"> Logic </h1>
+
+        <h1 class="tittles space"> Chapter 1  </h1>
+
+
+
+        <h3> Propositions and logical operations </h3>
+        <ul>
+
+          <li>
+            <b>Logic</b> is the study of formal reasoning.
+
+          </li>
+
+          <li>
+
+A <b>proposition</b> is a statement that is either true or false. Propositions are typically declarative sentences.
+A proposition's <b>truth value</b> is a value indicating whether the proposition is actually true or false.
+
+          </li>
+
+          <li>
+          A <b>compound proposition</b> is created by connecting individual propositions with logical operations. A
+          <b>logical operation</b> combines propositions using a particular composition rule. For example, the
+          conjunction operation is denoted by ∧. The proposition p ∧ q is read "p and q" and is called the
+          <b>conjunction</b> of p and q. p ∧ q is true if both p is true and q is true. p ∧ q is false if p is
+          false, q is false, or both are false.
+<br><br>
+                      A <b>conjunction</b>  operation is denoted by <b> ^ </b>, which
+                    basically works like <i>the "AND" logical operator from high-lvl-languages</i>.
+
+
+
+
+        </li>
+
+        <li>
+
+          A <b>truth table</b> shows the truth value of a compound proposition for every possible combination
+        of truth values for the variables contained in the compound proposition.
+
+      </li>
+
+<li>
+      The disjunction operation is denoted by <b>∨</b> (which
+               basically works like <i> the "OR" logical operator from high-lvl-languages</i>
+                (will be true if just one is true). The proposition p ∨ q is
+      read "p or q", and is called the <b>disjunction</b> of p and q. p ∨ q is true if either one of
+      p or q is true, or if both are true. The proposition p ∨ q is false only if both p and q are false.
+
+<br><br>
+ The <b>inclusive or</b> operation also
+         works the same way.
+       </li>
+
+         <li> *** Order of operations in absence of parentheses *** <br>
+              1.¬ (not)<br>
+              2.∧ (and)<br>
+              3.∨ (or)<br>
+         </li>
+
+
+           <li> The <b>exclusive or </b> operation evaluates to true if one item is true, and the other
+           is false. The operation is denoated with <b>⊕</b></li>
+           <li> The <b>negation</b> operation acts on just one proposition and has the effect of reversing
+             the truth value of the proposition. The negation of proposition p is denoted with <b>¬</b></li>
+
+
+        </ul>
+
+        <h3>Evaluating compound propositions </h3>
+        <ul>
+          <li> A <b><i>truth table</i></b> for a compound proposition has a row for every possible combination of truth
+            assignments for the statement's variables. If a compound proposition has n variables, there
+            are 2(^n) rows. The first variable gets half the number of rows, first half is 0 then the other
+            half is 1. The next variable takes half from the half we got from the <i>first variable</i>
+            alternating first half(half) with 0, then 1, and so on. If we move to next variable divide
+            half the number of rows from the previous variable, starting with 0, alternating, and so on.
+          </li>
+        </ul>
+
+        <h3>Conditional statements</h3>
+        <ul>
+          <li> The <b>conditional operation</b> is denoted with the symbol <b>→</b>. The proposition p → q is read "if p then q".
+            <br><br>
+            A compound proposition that uses a conditional operation is called a <b>conditional proposition</b>.
+            A conditional proposition expressed in English is sometimes referred to as a <b>conditional statement</b>, as in
+            "If there is a traffic jam today, then I will be late for work."
+            <br><br>
+            In p → q, the proposition p is called the <b>hypothesis</b>, and the proposition q is called the <b>conclusion</b>.
+            <br><br>
+             The truth table for p → q is given below :
+              <br><br>
+              <img src="img/240-exp-01.png" alt="example-error">
+            </li>
+            <li>Three conditional statements related to proposition p → q are so common that they have special names. The <b>converse</b> of p → q
+              is q → p. The <b>contrapositive</b> of p → q is ¬q → ¬p.The <b>inverse</b> of p → q is ¬p → ¬q.
+              <br><br>
+
+
+              <img src="img/240-exp-02.png" alt="example">
+              </li>
+              <li> If p and q are propositions, the proposition "p if and only if q" is expressed with
+                the <b>biconditional operation</b> and is denoted p <b>↔</b> q. The proposition p ↔ q is true when p
+                and q have the <i>same</i> "truth" value and is false when p and q have <i>different</i>
+                "truth" values.
+
+                <br><br>
+                Alternative ways of expressing p ↔ q in English include "p is necessary and sufficient for q"
+                or "if p then q, and conversely". The term <b>iff</b> is an abbreviation of the expression "if and
+                only if", as in "p iff q".
+              </li>
+
+<h3>Logical equivalence</h3>
+
+              <li>
+
+                A compound proposition is a <b>tautology</b> if the proposition is always true, regardless of the truth value
+                of the individual propositions that occur in it. A compound proposition is a <b>contradiction</b> if
+                the proposition is always false, regardless of the truth value of the individual propositions
+                that occur in it.
+
+              </li>
+
+
+              <li>
+
+                Two compound propositions are said to be <b>logically equivalent</b> if they have the same truth value
+                regardless of the truth values of their individual propositions.
+
+              </li>
+
+              <li>
+
+                <b>De Morgan's laws</b> are logical equivalences that show how to correctly distribute a negation operation inside a parenthesized expression.
+                <br><br>
+                The first De Morgan's law is: ¬(p ∨ q)   ≡   (¬p ∧ ¬q)
+
+              </li>
+
+
+<h3>Laws of propositional logic</h3>
+
+            <li>
+              If two propositions are logically equivalent, then one can be substituted for the the other within a more complex
+              proposition. <i>Substitution</i> gives an alternate way of showing that two propositions are logically equivalent.
+              The table below shows several laws of propositional logic that are particularly useful for establishing the logical
+              equivalence of compound propositions:
+              <br><br>
+              <img src="img/240-exp-03.png" alt="exp" class="re-size">
+            </li>
+        </ul>
+
+        <h3> Predicates & Quantifiers </h3>
+        <ul>
+
+          <li>
+
+            A logical statement whose truth value is a function of one or more variables is called a <b>predicate</b>.
+<br><br>
+Example 1)
+P(X) = "P of x"
+<br><br>
+Example 2)
+P(5) = "5 is an odd number"
+
+      <br><br>
+               The <b>domain</b> of a variable in a predicate is the set of all possible values for the variable.
+               If the domain of a variable in a predicate is not clear from context, the domain should be given as
+               part of the definition of the predicate.
+            </li>
+
+            <li>A <b>counterexample</b> for a universally quantified statement is an element in the
+              domain for which the predicate is false.
+
+            </li>
+
+            <li>The symbol <b>∀</b> is a <b>universal quantifier</b> and the statement <b>∀x P(x)</b>
+              is called a <b>universally quantified statement</b>. The statement ∀x P(x) asserts
+              that P(x) is true for every possible value for x in its domain.
+            </li>
+            <li> The symbol <b>∃</b> is an <b>existential quantifier</b> and the statement <b>∃x P(x)</b>
+              is called a <b>existentially quantified statement</b>. ∃x P(x) is a proposition because it
+              is either true or false. ∃x P(x) is true if and only if P(n) is true for at least one
+              value n in the domain of variable x.
+            </li>
+          </ul>
+
+<h3>Quantified Statements</h3>
+          <ul>
+            <li>The <i>universal and existential quantifiers</i> are generically called <b>quantifiers</b>.
+              A logical statement that includes a <i>universal or existential quantifier</i> is
+              called a <b>quantified statement</b>.
+              <br><br>
+              The quantifiers ∀ and ∃ are applied before the
+              logical operations (∧, ∨, →, and ↔) used for propositions. This means that the statement
+              ∀x P(x) ∧ Q(x) is equivalent to <p class="red-text">(</p>∀x P(x)<p class="red-text">)</p> ∧ Q(x)
+              as opposed to ∀x <p class="red-text">(</p>P(x) ∧ Q(x)<p class="red-text">)</p>.
+              <br><br>
+              The proposition ∃x (P(x) ∧ ¬O(x)) states that there exists a positive
+              number that is prime and not odd. This proposition is true because of
+              the number x = 2.
+              <br><br>
+              The proposition ∀x (P(x) → O(x)) says that for every positive integer x, if x is prime then x is odd. This proposition is false, because of the counterexample x = 2. Since 2 is prime and not odd, the conditional statement P(2) → O(2) is false.
+            </li>
+
+            <li>
+              When a variable <p class="red-text">is</p> enclosed inside or <i>bound</i> to a <i>quantifier</i>, that variable is considered to be a
+              <b>bound variable</b>.  When the variable <p class="red-text">is not</p> enclosed inside or <i>bound</i> to a <i>quantifier</i>, that
+              variable is called a <b>free variable</b>.
+              <br><br>
+              A statement with no free variables is a proposition because
+              the statement's truth value can be determined.
+              <br><br>
+              In the statement (∀x P(x)) ∧ Q(x), the variable x in P(x) is bound by the universal quantifier, but the variable x in Q(x) is not
+              bound by the universal quantifier. Therefore the statement (∀x P(x)) ∧ Q(x) is not a proposition. In contrast, the universal quantifier
+              in the statement ∀x (P(x) ∧ Q(x)) binds both occurrences of the variable x. Therefore ∀x (P(x) ∧ Q(x)) is a proposition.
+              <br><br>
+              *** reminder : compound propositions seperate things ***
+              <br><br>
+              EXP)
+              <br>
+              The expression <p class="b-mark">∀x P(x) ∨ ∃x Q(x)</p> is a proposition.
+            </li>
+          </ul>
+
+          <h3>Nested Quantifers </h3>
+          <ul>
+
+            <li>A logical expression with more than one quantifier that bind different variables in the same
+              predicate is said to have <b>nested quantifiers</b>. The examples below show several logical expressions
+              and which variables are bound in each. The logical expression is a proposition if all the
+              variables are bound.
+              <br><br>
+              <img src="img/240-exp-04.png" alt="exp">
+<br><br><br><br>
+              <mark>Nested quantifiers of the same type</mark> :
+              <br><br>
+              Consider the proposition: <p class="b-mark">∀x ∀y M(x, y)</p>. The proposition can be expressed in English as:
+              <br>
+              ∀x ∀y M(x, y)   ↔   "Everyone sent an email to everyone."
+              <br><br>
+              <small>
+                The statement ∀x ∀y M(x, y) is true if for every pair, x and y, M(x, y) is true. The universal
+                quantifiers include the case that x = y, so if ∀x ∀y M(x, y) is true, then everyone sent an
+                email to everyone else and everyone sent an email to himself or herself. The
+                statement ∀x ∀y M(x, y) is false if there is any pair, x and y, that causes M(x, y) to be
+                false. In particular, ∀x ∀y M(x, y) is false even if there is a single individual who did not
+                send himself or herself an email.
+              </small>
+              <br><br><br>
+              Consider the proposition: <p class="b-mark"> ∃x ∃y M(x, y)</p>. The proposition can be expressed in English as:
+              <br>
+              ∃x ∃y M(x, y)   ↔   "There is a person who sent an email to someone."
+              <br><br>
+              <small>
+                The statement ∃x ∃y M(x, y) is true if there is a pair, x and y, in the domain that causes M(x, y) to
+                evaluate to true. In particular, ∃x ∃y M(x, y) is true even in the situation that there is a
+                single individual who sent an email to himself or herself. The statement ∃x ∃y M(x, y) is
+                false if all pairs, x and y, cause M(x, y) to evaluate to false.
+              </small>
+
+<br><br>
+            <mark>Nested quantified expression with both types of quantifiers</mark> (the quantifiers are applied from left to right) :
+              <br><br>
+              Example )
+              <br><br>
+              <p class="b-mark">M(x,y): x sent an email to y</p>
+              <br><br>
+              The statement <p class="b-mark">∃x ∀y M(x, y)</p> translates into English as:
+              <br>
+              ∃x ∀y M(x, y)   ↔   "There is a person who sent an email to everyone."
+              <br><br>
+              Switching the quantifiers changes the meaning of the proposition:
+              <br>
+              ∀x ∃y M(x, y)   ↔   "Every person sent an email to someone."
+
+              <br><br>
+
+              In reasoning whether a quantified statement is true or false, it is
+              useful to think of the statement as a two player game in which
+              two players compete to set the statement's truth value. One of
+              the players is the "existential player" and the other player is
+              the "universal player". The variables are set from left to right
+              in the expression. If the predicate is true after all the variables
+              are set, then the quantified statement is true. If the predicate
+              is false after all the variables are set, then the quantified
+              statement is false.
+
+              <br><br><br>
+              Consider as an example the following quantified statement in which
+              the domain is the set of all integers: <p class="b-mark">∀x ∃y (x + y = 0)</p>
+              <br><br>
+              <small>
+              The universal player first selects the value of x. Regardless of which
+              value the universal player selects for x, the existential player can
+              select y to be -x, which will cause the sum x + y to be 0. Because the
+              existential player can always succeed in causing the predicate to be
+              true, the statement ∀x ∃y (x + y = 0) is true.
+              </small>
+              <br><br>
+              Switching the order of the quantifiers gives the following statement: <p class="b-mark">∃x ∀y (x + y = 0)</p>
+              <br><br>
+              <small>
+              Now, the existential player goes first and selects a value for x.
+              Regardless of the value chosen for x, the universal player can select
+              some value for y that causes the predicate to be false. For example,
+              if x is an integer, then y = -x + 1 is also an integer and x + y = 1 ≠ 0.
+              Thus, the universal player can always win and the statement ∃x ∀y (x + y = 0) is false.
+            </small>
+
+              <br><br>
+              ??? <mark>In M(x,y)</mark> the <b>row</b> number indicates the value for x and the <b>column</b> number indicates the value for y.
+              <br><br>
+              <mark>M(x,y) = M(row, column)</mark>
+              <br><br>
+                <img src="img/240-exp-05.png" alt="exp" class="re-size">
+                <br><br><br>
+                <img src="img/240-exp-06.png" alt="exp">
+                <br><br><br><br>
+                ???? One way to view rows & columns is by <i>reading them</i>.
+                <br>
+                ∀ can be read as <mark>Every(row) or Every(column)</mark>.
+                <br>
+                ∃ can be read as <mark>At least one(row) or At least one(column). </mark>
+                <br><br>
+                ?? The middle can be read as <mark>has</mark>. The end can be read <mark>that's true</mark>.
+                <br>
+                ?? Exp : ∀x ∃y M(x, y) = Every (row) has at least one (column) that's true.
+                <br><br>
+                <img src="img/240-exp-07.png" alt="exp">
+              </li>
+          </ul>
+          <h3>More nested quantified statements</h3>
+          <ul>
+
+            <li>
+              We can use logic to express <b>everyone else</b> the following way:
+              <br><br>
+              ???? If all true then the whole expression can be a true statement (valid)
+              <br><br>
+              ∀x ∀y ((x ≠ y) → M(x, y))
+              <br><br>
+              Example)
+              <br>
+              (Define the predicate M(x, y) that indicates whether x sent an email to y. The statement ∀x ∀y M(x, y) asserts that every person sent an email to every other person ???<u>and every person sent an email to himself or herself</u>.)
+              <br><br>
+              <img src="img/240-exp-31.png" alt="exp">
+
+              <br><br><br><br><br>
+              We can use logic to express <b>someone else</b> the following way:
+              <br><br>
+              ???? If a there is a truth , besides the first variable(given which is usually x) which doesn't matter if truth or false, then the whole thing is a true statement (valid)
+              <br><br>
+              ∀x ∃y ((x ≠ y) ∧ M(x, y))
+              <br><br>
+              Example)
+              <br>
+              (???? Define the predicate M(x, y) that indicates whether x sent an email to y. The statement ∀x ∃y M(x, y) asserts that every person sent an email to someone else.)
+              <br><br>
+              <img src="img/240-exp-32.png" alt="exp">
+
+
+
+            </li>
+            <li>
+              Examples )
+              <br><br>
+              <img src="img/240-exp-30.png" alt="exp" class="re-size">
+            </li>
+          </ul>
+
+          <h3>Logical reasoning</h3>
+<ul>
+          <li>
+             An <b>argument</b> is a sequence of propositions, called <b>hypotheses</b>, followed by a final proposition, called the <b>conclusion</b>. An argument
+             is <b>valid</b> if the conclusion is true whenever the hypotheses are all true, otherwise the argument is <b>invalid</b>. <b>∴</b> reads "therefore"
+             <br><br>
+             Format (<b>Argument is valid/true whenever
+                 the proposition ( p<sub>1</sub> ∧ p<sub>2</sub> ∧ ... ∧ p<sub>n</sub> ) → c is a tautology</b>)
+
+             <br><br>
+             <i><b>p<sub>1</sub> </b> <div class="green-text">// Hypotheses</div>
+               <br>
+                <b>p<sub>2</sub> </b> <div class="green-text">// Hypotheses</div>
+                <br>
+                .....
+                <br>
+              <b>p<sub>n</sub> </b> <div class="green-text">// Hypotheses</div>
+                <br>
+              __________
+                <br>
+               ∴ c <div class="green-text">// "<i>Therefore</i>", Conclusion </div>
+              </b></i>
+            </li>
+            <li>
+              According to the commutative law, reordering the hypotheses does not change whether an argument is valid or not. Therefore two arguments are considered
+              to be the same even if the hypotheses appear in a different order. For example, the following two arguments are considered to be the same:
+              <br><br>
+              <img src="img/240-exp-35.png" alt="exp">
+              <img src="img/240-exp-36.png" alt="exp">
+            </li>
+            <li>
+              One way to establish the <i>validity of an argument</i> is to use a truth table.
+              In order to use a truth table to establish the validity of an argument, a truth table is constructed for all the hypotheses and the conclusion. Each
+              row in which all the hypotheses are true is examined. If the conclusion is true in each of the examined rows, then the argument is valid. If there is any row
+              in which all the hypotheses are true but the conclusion is false, then the argument is invalid.
+              <br><br>
+              Examples)
+              <br><br>
+              1)
+              <br>
+              <img src="img/240-exp-37.png" alt="exp" class="re-size">
+              <br><br>
+              2)
+              <br>
+              <img src="img/240-exp-38.png" alt="exp" class="re-size">
+
+          </li>
+
+            <li>
+              The <b>form</b> of an argument expressed in English is obtained by replacing each individual proposition with a variable.
+            </li>
+
+
+            <h3>????Rules of inference with propositions</h3>
+
+            <li>
+              ???  The validity of an argument can be established by applying the rules of inference and laws of propositional logic in a <b>logical proof</b>.
+                <br><br>
+                ???<img src="img/240-exp-47.png" alt="exp">
+                <br><br>
+                <img src="img/240-exp-48.png" alt="exp" class="re-size">
+                <br><br>
+                <img src="img/240-exp-49.png" alt="exp" class="re-size">
+
+            </li>
+
+            <h3>????Rules of inference with quantifiers</h3>
+            <li>
+            ????A value that can be plugged in for variable x is called an <b>element</b> of the domain of x.
+            </li>
+
+            <li>
+              ???? Elements of the domain can also be introduced within a proof in which case they are given generic names such as "c" or "d". There are two types of named elements used in logical proofs.
+               An <b>arbitrary</b> element of a domain has no special properties other than those shared by all the elements of the domain.
+               A <b>particular</b> element of the domain may have properties that are not shared by all the elements of the domain.
+            </li>
+
+            <li>
+                ?????The rules <b>existential instantiation</b> and <b>universal instantiation</b> replace a quantified variable with an element of the domain. The rules <b>existential generalization</b> and <b>universal generalization</b> replace an element of the domain with a quantified variable.
+                <br><br>
+                ????<img src="img/240-exp-50.png" alt="exp" class="re-size">
+
+            </li>
+
+</ul>
+
+<h1 class="tittles space"> Chapter 2  </h1>
+<ul>
+<li>
+  An integer x is <b>even</b> if there is an integer k such that x = 2k.
+  <br>
+  An integer x is <b>odd</b> if there is an integer k such that x = 2k+1.
+</li>
+
+
+
+<li>The <b>parity</b> of a number is whether the number is odd or even. If two numbers are both even or both odd, then the two numbers have the <b>same parity</b>. If one number is odd and the other is even, then the two numbers have <b>opposite parity</b>.</li>
+
+<li>
+  A number r is <b>rational</b> if there exist integers x and y such that y ≠ 0 and r = x/y. Note that for a particular rational number r, the choice of x and y is not necessarily unique. For example, if r = .5, then r = 1/2 and r = 2/4.
+
+</li>
+
+<li>
+  An integer x <b>divides</b> an integer y if and only if x ≠ 0 and y = kx, for some integer k.
+<br><br>
+The fact that x divides y is denoted x|y. If x does not divide y, then that fact is denoted x(/|)y(<i>looks something similar to this</i>).
+<br><br>
+If x divides y, then y is said to be a <b>multiple</b> of x, and x is a <b>factor</b> or <b>divisor</b> of y.
+
+</li>
+
+
+<li>
+An integer n is <b>prime</b> if and only if n > 1, and the only positive integers that divide n are 1 and n.
+<br><br>
+An integer n is <b>composite</b> if and only if n > 1, and there is an integer m such that 1 < m < n and m divides n.
+</li>
+
+<li>
+  If x and c are real numbers, then exactly one of the following statements is true:
+
+  <ul>
+  <li>
+    x < c
+  </li>
+  <li>
+    x = c
+  </li>
+  <li>
+    x > c
+  </li>
+  </ul>
+
+  The values of x and c can also be related using the symbols ≤ and ≥:
+
+  <ul>
+      <li>
+          x ≥ c if and only if x = c or x > c. We say that x is <b>at least</b> c or x is <b>greater than or equal to</b> c.
+      </li>
+      <li>
+          x ≤ c if and only if x = c or x < c. We say that x is <b>at most</b> c or x is <b>less than or equal to</b> c.
+      </li>
+
+  </ul>
+
+A real number x is <b>positive</b> if and only if x > 0. A real number x is <b>negative</b> if and only if x < 0. A real number x is <b>non-negative</b> if and only if x ≥ 0. A real number x is <b>non-positive</b> if and only if x ≤ 0.
+
+</li>
+
+<h3>Introduction to proofs</h3>
+
+<li>
+    A <b>theorem</b> is a statement that can be proven to be true. A <b>proof</b> consists of a series of steps, each of which follows logically from assumptions, or from previously proven statements, whose final step should result in the statement of the theorem being proven.
+    The proof of a theorem may make use of <b>axioms</b>, which are statements assumed to be true.
+    <br><br>
+    In this material, every proof begins with the word <b>Proof</b>: and ends with the symbol ■.
+</li>
+
+<li>
+A number n is a <b>perfect square</b> if n = k2 for some integer k.
+</li>
+
+<li>
+If the domain of a universal statement is small, it may be easiest to prove the statement by checking each element individually. A proof of this kind is called a <b>proof by exhaustion</b>.
+</li>
+
+<li>
+A proof that uses <b>universal generalization</b> to prove a universal statement names an arbitrary object in the domain and proves the statement for that object.
+</li>
+
+<li>
+ Two integers are <b>consecutive</b> if one of the numbers is equal to 1 plus the other number.
+</li>
+
+<li>
+  A <b>counterexample</b> is an assignment of values to variables that shows that a universal statement is false.
+</li>
+
+<li>
+A proof that shows that an existential statement is true is called an <b>existence proof</b>. The most common type of existence proof is a constructive proof of existence. An existential statement asserts that there is at least one element in a domain that has some particular properties.
+A <b>constructive proof of existence</b> gives a specific example of an element in the domain or a set of directions to construct an element in the domain that has the required properties.
+<br><br>
+ A <b>nonconstructive proof of existence</b> proves that an element with the required properties exists without giving a specific example.
+
+</li>
+
+
+<h3>Best practices and common errors in proofs</h3>
+
+
+<li>
+<b>Existential instantiation</b> is a law of logic that says if an object is known to exist, then that object can be given a name, as long as the name is not currently being used to denote something else.
+</li>
+
+<h3>Writing direct proofs</h3>
+
+<li>
+In a <b>direct proof</b> of a conditional statement, the hypothesis p is assumed to be true and the conclusion c is proven as a direct result of the assumption.
+</li>
+
+<h3>Proof by contrapositive</h3>
+
+<li>
+A <b>proof by contrapositive</b> proves a conditional theorem of the form p → c by showing that the contrapositive ¬c → ¬p is true. In other words, ¬c is assumed to be true and ¬p is proven as a result of ¬c.
+</li>
+
+<li>
+An <b>irrational number</b> is a real number that is not rational. Note that the definition implies that every real number is either rational or irrational but not both. Therefore if x is a real number that is not irrational, then x is rational.
+</li>
+
+
+<h3>Proof by contradiction</h3>
+
+<li>
+A <b>proof by contradiction</b> starts by assuming that the theorem is false and then shows that some logical inconsistency arises as a result of the assumption. The reasoning behind proof by contradiction is that if the assumption that the theorem is false leads to a conclusion which cannot be true, then the theorem must be true. A proof by contradiction is sometimes called an <b>indirect proof</b>.
+</li>
+
+<h3>Proof by cases</h3>
+
+<li>
+A <b>proof by cases</b> of a universal statement such as ∀x P(x) breaks the domain for the variable x into different classes and gives a different proof for each class. The proof for each class is called a <b>case</b>.
+</li>
+
+<li>
+The <b>absolute value</b> of a real number x is defined to be |x| = -x if x < 0, and |x| = x if x ≥ 0.
+</li>
+
+<li>
+The term <b>without loss of generality</b> (sometimes abbreviated <b>WLOG</b> or <b>w.l.o.g.</b>) is used in mathematical proofs to narrow the scope of a proof to one special case in situations when the proof can be easily adapted to apply to the general case.
+</li>
+
+</ul>
+
+
+
+
+
+          <h1 class="tittles space"> Chapter 3  </h1>
+
+<h3> Sets and subsets </h3>
+<ul>
+  <li>
+    A <b>set</b> is a collection of objects. Objects may be of various types, such as titles of books, names of bridges,
+    or rational numbers. This material is mostly concerned with sets of mathematical objects like numbers. The
+    objects in a set are called <b>elements</b>.
+    <br><br>
+    The symbol <b>∈</b> is used to indicate that <u>an element</u> is in a set, as in 2 ∈ A. The symbol ∉ indicates that an element is not in a set, as in 5 ∉ A.
+    <br><br>
+    Example 1)
+    <br>
+    A = { 4, 6, 3 }
+    <br>
+    5 ∈ A
+
+    <br><br>
+    Typically, capital letters will be used as variables denoting sets, and lower case letters will be used for elements in the set.
+    Variables can be used to indicate an unspecified member of a set. For example, if a ∈ A, then a is equal to 2, 4, 6, or 10.
+    <br><br>
+    The <b>roster notation</b> definition of a set is a list of the elements enclosed in curly braces with the individual elements separated by commas.
+    <br><br>
+    Example 1)
+    <br>
+    A = {2, 4, 6, 10}, then 5 ∉ A
+    <br><br>
+    Example 2)
+    <br>
+    B = { 2, 4, 6, ..., 20 }, then 8 ∈ B
+    <br><br>
+
+  </li>
+
+  <li>
+    The set with no elements is called the <b>empty set</b> and is denoted by the symbol <b>∅</b>. The empty set is sometimes referred to as the <b>null set</b> and can also be denoted by <b>{}</b>.
+    <br><br>
+     Because the empty set has no elements, for any element a, a ∉ ∅ is true.
+
+  </li>
+
+  <li>
+    A <b>finite set</b> is a set that is either empty or whose elements can be numbered 1 through n for some positive integer n. An <b>infinite set</b> is a set that is not finite.
+    The <b>cardinality</b> of a finite set A, denoted by |A|, is the number of distinct elements in A (<i>number of elements in a set</i>). The cardinality of the empty set |∅| is zero.
+    <br><br>
+    Examples 1)
+    <br>
+    A = {2, 4, 6, 10}, then |A| = 4
+
+  </li>
+
+  <li>
+    When there are many elements in a set, it may not be practical to provide an exhaustive list. In this case, ellipses (...) are used to denote a long (possibly infinite) sequence of numbers.
+  </li>
+
+  <li>
+    Some sets of numbers are used so frequently in mathematics that they have their own symbols
+    <br><br>
+    <img src="img/240-exp-08.png" alt="exp" class="re-size">
+    <br><br>
+    The superscript + is used to indicate the positive elements of a particular set. For example, the set <b>R<sup>+</sup></b> is the set of all positive real numbers, and <b>Z<sup>+</sup></b> is the set of all positive integers. A number x is <b>positive</b> if x > 0.
+    <br><br>
+    The superscript - is used to indicate the negative elements of a particular set. For example, the set <b>R<sup>-</sup></b> is the set of all negative real numbers, and <b>Z<sup>-</sup></b> is the set of all negative integers. A number x is <b>negative</b> if x < 0.
+    <br><br>
+    The number 0 is neither positive nor negative, so <b>0 ∉ Z<sup>+</sup></b> and <b>0 ∉ Z<sup>-</sup></b>.
+    <br><br>
+    A number x is <b>non-negative</b> if x ≥ 0.
+  </li>
+
+  <li>
+    In <b>set builder notation</b>, a set is defined by specifying that the set includes all elements in a larger set that also satisfy certain conditions.
+    <br><br>
+    Format/Example (S is the larger set from which the elements in A are taken. P(x) is some condition for membership in A. The colon symbol ":" is read "such that". The description for A above would read: "all x in S such that P(x)". Often, the set S will be one of the standard mathematical sets from the table above.) :
+    <br><br>
+    <b>A = { x ∈ S : P(x) }</b>
+    <br><br><br><br>
+    Example 1)
+    <br>
+    C = { x ∈ Z : 0 < x < 100 and x is prime}
+    <br>
+    (Would be all prime integers between 0 and 100)
+    <br><br>
+    Example 2)
+    <br>
+    D = { x ∈ R : |x| < 1 }
+    <br>
+    (Would be all real numbers between -1 and 1, not including 1 or -1)
+  </li>
+
+  <li>
+    The <b>universal set</b>, usually denoted by the variable <b>U</b>, is a set that contains all elements mentioned in a particular context.
+  </li>
+
+  <li>
+    Sets are often represented pictorially with <b>Venn diagrams</b>. A rectangle is used to denote the universal set U, and oval shapes are used to denote sets within U.
+    <br><br>
+    <img src="img/240-exp-09.png" alt="exp" class="center">
+
+
+  </li>
+
+  <li>
+    If <u>every</u> element in A is also an element of B, then A is a <b>subset</b> of B, denoted as <b>A ⊆ B</b>.
+    <br><br>
+    If there is an element of A that is not an element of B, then A is not a subset of B, denoted as <b>A ⊈ B</b>. If the universal set is U, then for every set A: <b>∅ ⊆ A ⊆ U</b>.
+    Two sets are equal if and only if each is a subset of the other: <b>A = B if and only if A ⊆ B and B ⊆ A</b>
+    <br><br>
+    If A ⊆ B and there is an element of B that is not an element of A (i.e., A ≠ B), then A is a <b>proper subset</b> of B, denoted as <b>A ⊂ B</b>. Venn diagrams are particularly useful for visualizing subset relationships between sets.
+    <br><br>
+    <img src="img/240-exp-10.png" alt="exp" class="center">
+    <br><br>
+    Tips?? :
+    <br><br>
+    if X ⊂ Y, then X ⊆ Y
+    <br><br>
+    if X ⊆ Y, then <u>!=</u> X ⊂ Y
+  </li>
+
+</ul>
+<br><br><br><br><br><br>
+<h3> Set of sets </h3>
+<ul>
+<li> It is possible that the elements of a set are themselves sets. The empty set ∅ is not the same as { ∅ }. The cardinality of { ∅ } is one since it contains exactly one element, which is the empty set.
+  <br><br>
+  ?? Only if a number is is outside a {} is it considered an element of the set. Elements inside {} are considered a set of {}, not the "outer set"??.
+  <br><br>
+  <b>{x} ∈ A</b>, does not equal : <b>x ∈ A</b>
+  <br><br><br>
+  Example 1)
+  <br>
+  A = { { 1, 2 }, ∅, { 1, 2, 3 }, { 1 } }
+  <br><br>
+<small>(The set A has four elements: { 1, 2 }, ∅, { 1, 2, 3 }, and { 1 }. For example, { 1, 2 } ∈ A. Note that 1 is not an element of A, so 1 ∉ A, although { 1 } ∈ A. Furthermore, { 1 } ⊈ A since 1 ∉ A.)</small>
+  <br><br><br>
+  Example 2)
+  <br>
+  <img src="img/240-exp-11.png" alt="exp" class="re-size">
+</li>
+
+<li>
+  The <b>power set</b> of a set A, denoted P(A), is the set of all subsets of A. Here is the general rule for the <u>cardinality</u> of a power set:
+  <br>
+  (Let A be a finite set of cardinality n) The cardinality of the power set of A is 2<sup>n</sup>, or <b>|P(A)|=2<sup>n</sup></b>.
+  <br><br><br>
+  Example 1)
+  <br>
+  A = { 1, 2, 3 }, then P(A) = { ∅, { 1 }, { 2 }, { 3 }, { 1, 2 }, { 1, 3 }, { 2, 3 }, { 1, 2, 3 } }
+
+</li>
+</li>
+
+<li>
+  ????? More examples
+  <br>
+  <img src="img/240-exp-12.png" alt="exp" class="re-size">
+  <br><br>
+
+  <br>
+  Notes (<small>when not working with sets within sets</small>)
+  <br>
+  3) A={x,y,z}
+  <br>
+  can be represented : {x, y} ⊆ A
+  <br>
+  can be represented : {x, y} ∉ A
+  <br>
+  ???can be represented : x, y ∈ A
+  <br>
+
+</li>
+</ul>
+
+<h3>Union and intersection</h3>
+<ul>
+  <li>Let A and B be sets. The <b>intersection</b> of A and B, denoted <b>A ∩ B</b> and read "<b>A intersect B</b>", is the set of all elements that are elements of both A and B.
+    <br><br>
+    Example)
+    <br>
+    <img src="img/240-exp-13.png" alt="exp" class="re-size">
+    <br><br>
+    ???
+    <img src="img/240-exp-14.png" alt="exp" class="re-size">
+</li>
+
+<li>
+The <b>union</b> of two sets, A and B, denoted <b>A ∪ B</b> and read "<b>A union B</b>", is the set of all elements that are elements of A or B.
+<br><br>
+Example)
+<br>
+<img src="img/240-exp-15.png" alt="exp" class="re-size">
+</li>
+
+  <li>
+    Set operations can be combined to define even more sets. For example, the set A ∪ ( B ∩ C ) is the union of the set A and the set B ∩ C. The use of parentheses is important since the set ( A ∪ B ) ∩ C is different from the set A ∪ ( B ∩ C ).
+    <br><br>
+    Example 1)
+    <br>
+    <img src="img/240-exp-16.png" alt="exp" class="re-size">
+    <br><br><br>
+    Example 2)
+    <br>
+    <img src="img/240-exp-17.png" alt="exp" class="re-size">
+  </li>
+
+
+<li>
+A special notation allows for a compact representation of the intersection of a long sequence of sets A1, A2, ..., An. In the notation below, the expression "i = 1" below the intersection sign and the "n" above the intersection sign indicates that the intersection operation will be applied to all sets with integer indices i ranging from 1 through n.
+</li>
+
+
+
+<li>
+Examples :
+<br><br>
+1)
+<br>
+<img src="img/240-exp-18.png" alt="exp" class="center">
+<br>
+2)
+<br>
+<img src="img/240-exp-19.png" alt="exp" class="center">
+
+</li>
+</ul>
+
+
+<h3>More set operations</h3>
+<ul>
+  <li>
+ The <b>difference</b> between two sets A and B, denoted <b>A - B</b>, is the set of elements that are in A but not in B.
+ <br><br>
+ <img src="img/240-exp-20.png" alt="exp" class="center">
+  </li>
+
+
+  <li>
+    The <b>symmetric difference</b> between two sets, A and B, denoted <b>A ⊕ B</b>, is the set of elements that are a member of exactly one of A and B, but not both.
+    An alternative definition of the symmetric difference operation is: <b>A ⊕ B = ( A - B ) ∪ ( B - A )</b>
+    <br><br>
+    <img src="img/240-exp-21.png" alt="exp" class="center">
+
+  </li>
+
+<li>
+The <b>complement</b> of a set A, denoted The complement of a set A, denoted <SPAN STYLE="text-decoration:overline"><b>A</b></SPAN>, is the set of all elements in U that are not elements of A. An alternative definition of <SPAN STYLE="text-decoration:overline">A</SPAN> is <b>U - A</b>.
+<br><br>
+Example 1)
+<br>
+let U = <b>Z</b>
+<br>
+define: A = { x ∈ Z: x is odd }, the complement of A is the set of all even integers.
+<br><br>
+Example 2)
+<br><br>
+<img src="img/240-exp-22.png" alt="exp" class="center">
+</li>
+
+<li>
+
+  The table below summarizes the set operations defined in this material :
+  <br><br>
+  <img src="img/240-exp-23.png" alt="exp" class="center">
+</li>
+
+<li>
+  Examples :
+
+</li>
+
+
+</ul>
+
+<h3>Set Identities</h3>
+
+<ul>
+  <li> A <b>set identity</b> is an equation involving sets that is true regardless of the contents of the sets in the expression. </li>
+  <br>
+  <img src="img/240-exp-24.png" alt="exp" class="center">
+<br><br>
+<img src="img/240-exp-25.png" alt="exp" class="center">
+<br><br>
+
+</ul>
+
+<h3> Cartesian products </h3>
+<ul>
+<li>An <b>ordered pair</b> of items is written (x, y). The first <b>entry</b> of the ordered pair (x, y) is x and the second entry is y.
+<br><br>
+The use of parentheses ( ) for an ordered pair indicates that the order of entries is significant,
+unlike sets which use curly braces { }, indicating that the order in which the elements are listed
+does not matter. For example, (x, y) ≠ (y, x) unless x = y. By contrast, {x, y} is equal to {y, x},
+with both denoting the set consisting of elements x and y. Two ordered pairs (x, y) and (u, w) are
+equal if and only if x = u and y = w.
+</li>
+
+<li>
+For two sets, A and B, the <b>Cartesian product</b> of A and B, denoted A x B, is the set of all ordered pairs in which the first entry is in A and the second entry is in B.
+<br><br>
+Format : A x B = { (a, b) : a ∈ A and b ∈ B }
+<br>
+(Since the order of the elements in a pair is significant, A x B will not be the same as B x A, unless A = B, or either A or B is empty. If A and B are finite sets, then |A x B| = |A|⋅|B|.)
+<br><br>
+???? Format : |A x B| = |A| * |B|
+<br>
+???? A = {1,2,3}, B = {x,y}, |A x B| = 6
+
+</li>
+
+<li>
+An ordered list of three items is called an <b>ordered triple</b> and is denoted (x, y, z). For n ≥ 4, an ordered list of n items is called an <b>ordered n-tuple</b> (or just <b>n-tuple</b> for short).
+<br><br>
+For example, (w, x, y, z) is an ordered 4-tuple and (u, w, x, y, z) is an ordered 5-tuple. The Cartesian product of three sets contains ordered triples, and for n ≥ 4, the Cartesian product of n sets contains n-tuples. The Cartesian product of n sets, A1, A2, ..., An is :
+<br>
+A1 x A2 x ... x An = { (a1, a2, ... , an) : ai ∈ Ai for all i such that 1 ≤ i ≤ n }
+<br><br>
+Example 1)
+<br>
+A = {a, b}, B = {1, 2}, C = {x, y}, and D = {α, β} ; (<i><u>some</u> elements in the set AxBxCxD</i>)  (a, 1, y, β) (b, 1, x, α)
+</li>
+
+
+<li>
+The Cartesian product of a set A with itself can be denoted as A × A or A2. More generally:
+<br><br>
+For example, if A = {0, 1}, then A<sup>n</sup> is the set of all ordered n-tuples whose entries are bits (0 or 1). For n = 3:
+<br>
+{0, 1}<sup>3</sup> = { (0, 0, 0), (0, 0, 1), (0, 1, 0), (0, 1, 1), (1, 0, 0), (1, 0, 1), (1, 1, 0), (1, 1, 1) }
+<br><br>
+Another common example is <b>R</b><sup>n</sup>, which is the set of all ordered n-tuples of real numbers. When n = 2, <b>R</b><sup>2</sup> is the set of all pairs (x, y) such that x and y are real numbers.
+
+</li>
+
+<li>
+
+A <b>binary string</b> is a string whose alphabet is {0, 1}. A <b>bit</b> is a character in a binary
+string. A string of length n is also called an <b>n-bit string</b>. The set of binary strings of length n is denoted as {0,1}<sup>n</sup>
+<br><br>
+The <b>empty string</b> is the unique string whose length is 0 and is usually denoted by the symbol <b>λ</b>.
+Since {0, 1}<sup>0</sup> is the set of all binary strings of length 0, {0, 1}<sup>0</sup> = {λ}.
+<br><br>
+If s and t are two strings, then the <b>concatenation</b> of s and t (denoted st) is the string obtained by putting s and t together.
+</li>
+</ul>
+
+<h3> Partitions </h3>
+
+<ul>
+
+<li>
+Two sets, A and B, are said to be <b>disjoint</b> if their intersection is empty (A ∩ B = ∅).
+A sequence of sets, A<sub>1</sub>, A<sub>2</sub>, ..., A<sub>n</sub>, is <b>pairwise disjoint</b> if every pair of distinct sets in the
+sequence is disjoint (i.e., A<sub>i</sub> ∩ A<sub>j</sub> = ∅ for any i and j in the range from 1
+through n where i ≠ j).
+
+</li>
+
+<li>
+A <b>partition</b> of a non-empty set A is a collection of non-empty subsets of A such that
+each element of A is in exactly one of the subsets. A<sub>1</sub>, A<sub>2</sub>, ...,A<sub>n</sub> is
+a partition for a non-empty set A if all of the following conditions hold:
+<ul>
+  <li>
+For all i, A<sub>i</sub> ⊆ A.
+  </li>
+
+  <li>
+For all i, A<sub>i</sub> ≠ ∅
+  </li>
+
+
+<li>
+A<sub>1</sub>, A<sub>2</sub>, ...,A<sub>n</sub> are pairwise disjoint.
+</li>
+
+<li>
+A = A<sub>1</sub> ∪ A<sub>2</sub> ∪ ... ∪ A<sub>n</sub>
+</li>
+
+</ul>
+
+Example 1)
+<br><br>
+<img src="img/240-exp-26.png" alt="exp" class="center">
+
+<br><br>
+Example 2)
+<br><br>
+<img src="img/240-exp-27.png" alt="exp" class="center">
+
+</li>
+</ul>
+
+<h1 class="tittles space"> Chapter 4  </h1>
+<h3>Functions</h3>
+<ul>
+
+<li>
+???? A <b>function</b> f that maps elements of a set X to elements of a set Y, is a subset of X × Y such that for every x ∈ X, there is exactly one y ∈ Y for which (x, y) ∈ f.
+<br><br>
+???? f: X → Y is the notation to express the fact that f is a function from X to Y. The set X is called the <b>domain</b> of f, and the set Y is the <b>target</b> of f. An alternate word for target that is sometimes used is <b>co-domain</b>. The fact that f maps x to y (or (x, y) ∈ f) can also be denoted as f(x) = y.
+<br><br>
+???? If f maps an element of the domain to zero elements or more than one element of the target, then f is not <b>well-defined</b>.
+<br><br>
+?? The <u>domain</u> can only have one "arrow" pointing to the target. The <u>targets</u> can have multiple "arrows" pointed at it or none at all.
+
+
+<br><br><br><br>
+ Alternatively, a function with a finite domain can be expressed graphically as an arrow diagram. In an <b>arrow diagram</b> for a function f, the elements of the domain X are listed on the left and the elements of the target Y are listed on the right.
+<br><br>
+Example 1)
+<br><br>
+ <img src="img/240-exp-28.png" alt="exp" class="center">
+<br><br>
+Example 2)
+<br><br>
+<img src="img/240-exp-29.png" alt="exp" class="center">
+<br><br><br>
+???? For function f: X → Y, an element y is in the <b>range</b> of f if and only if there is an x ∈ X such that (x, y) ∈ f. Expressed in set notation:
+<br><br>
+???? Range of f = { y: (x, y) ∈ f, for some x ∈ X }
+<br><br>
+?? Functions can display a <b>range</b> of <i>picked</i> values from the domain and range
+(exp: f = { (a, 3), (b, 1), (c, 4), (d, 1) }). The <i>domain</i> values of the functions (exp: f: <mark>A</mark> → X) go
+on the left side of the range (likewise the <i>target</i> side does the same f: A → <mark>X</mark>)
+
+</li>
+
+<li>
+The domain and target set for a function can also be a set of <i>strings</i>.
+<br><br>
+For example, the function f: {0, 1}<sup>3</sup> → {0, 1}<sup>4</sup> takes as input a 3-bit string and outputs a 4-bit string.
+<br><br>
+Example 1)
+<br>
+Suppose that f is defined so that for any x ∈ {0, 1}<sup>3</sup>, f(x) = x0. Then for any 3-bit string x, the output of f on input x is obtained by adding a 0 to the end of x.
+<br><br>
+Example 2)
+<br>
+<img src="img/240-exp-39.png" alt="exp" class="re-size">
+<br><br>
+Example 3)
+<br>
+<img src="img/240-exp-40.png" alt="exp" class="re-size">
+</li>
+
+<li>
+Two functions, f and g, are <b>equal</b> if f and g have the same domain and target, and f(x) = g(x) for every element x in the domain.
+</li>
+
+<h3> Floor & ceiling functions </h3>
+
+<li>
+  The <b>floor function</b> maps a real number to the nearest integer in the downward direction.
+<br><br>
+  floor: <b>R → Z</b>, where floor(x) = the largest integer y such that y ≤ x.
+<br><br>
+<img src="img/240-exp-41.png" alt="exp" class="re-size">
+
+<br><br><br><br>
+  The <b>ceiling function</b> rounds a real number to the nearest integer in the upward direction.
+<br><br>
+  ceiling: <b>R → Z</b>, where ceiling(x) = the smallest integer y such that x ≤ y.
+<br><br>
+<img src="img/240-exp-42.png" alt="exp" class="re-size">
+<br><br><br><br>
+Example)
+<br><br>
+<img src="img/240-exp-43.png" alt="exp" class="re-size">
+</li>
+
+<h3>Properties of function</h3>
+
+<li>
+A function f: X → Y is <b>one-to-one</b> or <b>injective</b> if x1 ≠ x2(any two distinct elements) implies that f(x1) ≠ f(x2)(mirror images? are not the same). That is, f maps different elements in X to different elements in Y.
+<br><br>
+??? A function f: X → Y is <b>one-to-one</b> or <b>injective</b> if all elements in X have a connection. Elements in Y can have no connection, or a max of one connection per element.
+<br><br>
+Example )
+<br><br>
+<img src="img/240-exp-44.png" alt="exp" class="re-size">
+</li>
+<li>
+A function f: A → B is <b>onto</b> or <b>surjective</b> if the range of f is equal to the target Y. That is, for every y ∈ Y(<i>element in Y</i>), there is an x ∈ X(<i>element in X</i>) such that f(x) = y.
+<br><br>
+??? Both sides have to be mapped (elements in Y <small>or B</small> can have two connections )
+<br><br>
+??? Both sides have have a connection with Y being able to carry have two connections??
+<br><br>
+Example)
+<br><br>
+<img src="img/240-exp-45.png" alt="exp" class="re-size">
+</li>
+<li>
+A function is <b>bijective</b> if it is both one-to-one and onto. A bijective function is called a <b>bijection</b>. A bijection is also called a <b>one-to-one correspondence</b>.
+<br><br>
+???? A function f: A → B is <b>bijective</b> if elements of both A & B are all connected, with B elements only having one connection(<i>both</i>A & B elements have only one connection).
+<br><br>
+Example )
+<br><br>
+<img src="img/240-exp-46.png" alt="exp" class="re-size">
+
+
+</li>
+
+<h3>Exponential function </h3>
+
+<li>
+  The <b>exponential function</b> exp<sub>b</sub>:<b>R → R<sup>+</sup></b> is defined as:
+<br>
+<b>exp<sub>b</sub>(x) = b<sup>x</sup></b>
+<br><br>
+where b is a positive real number and b ≠ 1. The parameter b is called the <b>base of the exponent</b> in the expression bx. The input x to the function bx is called the <b>exponent</b>.
+</li>
+<li>
+ The <b>logarithm function</b> is the inverse of the exponential function. For real number b > 0 and b ≠ 1, log<sub>b</sub>:<b>R<sup>+</sup> → R</b> is defined as:
+<br>
+<b>b<sup>x</sup>=y</b>  <-->  <b>log<sub>b</sub>y=x </b>
+<br><br>
+The parameter b is called the <b>base of the logarithm</b> in the expression log<sub>b</sub>y.
+
+</li>
+
+
+<h1 class="tittles space"> Chapter 6  </h1>
+<h3>Binary relation</h3>
+<li>
+Re-call :
+<br><br>
+- The symbol <b>∈</b> is used to indicate that an element is in a set.
+<br><br>
+- <b>AxB</b> ; A <b>cartesian product</b> of two sets A and B is the set of all possible ordered pairs (a, b), where a ∈ A and b ∈ B (element∈set)
+
+</li>
+<li>
+To trace the relationship between the elements of two or more sets (or between the elements on the same set), we use a special mathematical structure called a <b>relation</b>.
+<br><br>
+A <b>binary relation</b> (<b>R</b>) from set <i>A</i> to set <i>B</i> is a subset of the Cartesian product <i>AxB</i>: <b>R⊆AxB</b>
+<br><br>
+If <i>R⊆AxB</i> is a <i>binary relation</i> & <b>(a,b) ∈ R</b>, we say <i>a</i> is related to <i>b</i> by <i>R</i>.
+It is denoted by <b>aRb</b> (<i>infix notation</i>).
+
+<br><br><br><br>
+Example 1)
+<br>
+S = <i>set</i> of students
+<br>
+C = <i>set</i> of classes
+<br>
+E = relation between <b>s∈S</b> & <b>c∈C</b>, indicates whether a student enrolled in a given class.
+<br>
+-----------------------------------------------------------------------------------------------------------
+<br>
+<b>sEc</b> (if student <b>s</b> is enrolled in class <b>c</b>)
+<br><br>
+(A student can be enrolled in more than one class and a class can have more than one student enrolled in it. If a student <b>s</b>
+is not currently taking any classes, then there is no <b>c</b> such that <b>sEc</b>. Similarly, if a course <b>c</b> is not currently
+offered by the university, then there is no <b>s</b> such that <b>sEc</b>)
+<br><br>
+Example 2)
+<br>
+<img src="img/240-exp-53.png" alt="exp" class="re-size">
+
+</li>
+
+<li>
+We can represent <i>binary relation</i> in a more graphical way with an <b>arrow diagram</b>.
+<br><br>
+Example 1/Format :
+<br>
+
+In an <i>arrow diagram</i> of a <i>aRb</i>, elements of <b>A</b> are listed on the left, & elements of <b>B</b> are listed on the right.
+
+<br><br>
+Example 2)
+<img src="img/240-exp-51.png" alt="exp" class="re-size">
+</li>
+
+<li>
+A <b>matrix representation</b> of <i>aRb</i> is a rectangular array of numbers with |A| rows and |B| columns. Each row corresponds to an element of A and each column corresponds to an element of B.
+<br><br>
+If there is a connection(arrow) from one element to the other it is represented by 1, otherwise it is 0.
+<br><br>
+Example)
+<br>
+<img src="img/240-exp-52.png" alt="exp" class="re-size">
+</li>
+
+<li>
+???? It is possible to have aRb in which A = B.
+A <b>binary relation on a set</b> A is a subset of A x A. The set A is called the <b>domain</b> of the binary relation.
+</li>
+
+<li>
+An element that is related to itself is indicated by an arrow called a <b>self-loop</b>.
+A self-loop leaves the element and then turns around to point to itself again.
+<br><br>
+Example)
+<br>
+<img src="img/240-exp-54.png" alt="exp" class="re-size">
+</li>
+
+<h3>Properties of binary relations</h3>
+
+<li>
+For a <i>relation R</i> in <i>set A</i>, <i>relation</i> is <b>reflexive</b> if <b>(a,a) ∈ R for every a∈A</b>.
+<br><br>
+????
+<br>
+<b>Reflexive</b>. <i>All elements</i> must have an arrow to <i>self</i> in order to be true :
+<br>
+"arrows to self"
+<br>
+For all elements x, (x,x)
+<br><br>
+R is <b>anti-reflexive</b> if and only if for every x in the domain of R, it is not true that xRx. Irreflexive is an alternative term for anti-reflexive.
+
+<br><br>
+Examples)
+<img src="img/240-exp-55.png" alt="exp" class="re-size">
+
+</li>
+
+<li>
+For a <i>relation R</i> in <i>set A</i> & <i>set B</i>, <i>relation</i> is <b>symmetric</b>, if <b>(a,b) ∈ R, then (b,a) ∈ R</b>.
+<br><br>
+??? <b>Symmetric</b>. It's also an all or nothing, meaning that every <i>arrow</i> (not element) must have an <i>arrow back</i> :
+<br>
+"arrows back"
+<br>
+if (x,y) then (y,x)
+<br><br>
+<br><br>
+Suppose that R is a relation on set A. R is <b>anti-symmetric</b> if and only if for every pair, x and y ∈ A, if x ≠ y then it can not be the case that xRy and yRx are both true.
+
+<br><br>
+??? <b>Anti-Symmetric</b>. For all <b>(a,b)∈R</b>, where a != b, we must have (b,a)∉R  :
+
+
+<br><br>
+Example 1)
+<br>
+<img src="img/240-exp-56.png" alt="exp" class="re-size">
+
+<br><br>
+Example 2)
+<br>
+<img src="img/240-exp-57.png" alt="exp" class="re-size">
+
+<img src="img/240-exp-58.png" alt="exp" class="re-size">
+
+<br><br>
+Example 3 & 4)
+<br>
+<img src="img/240-exp-59.png" alt="exp" class="re-size">
+
+
+</li>
+
+<li>
+For a relation R in set A, relation is <b>transitive</b>, if <b>(a, b) ∈ R & (b,c) ∈ R, then (a, c) ∈ R</b>.
+<br><br>
+???? <b>Transitive</b>
+<br>
+"shortcuts"
+<br>
+If (x,y) and (y,z) then (x,z)
+<br><br>
+Method 1 (list??) : We first compare pairs if they have a connection with <i>y</i>. Next are the outer elements (<i>x</i>,<i>z</i>) which needs to have a connection as well.
+<br><br>
+Method 2 (connection) : If an element(<i>x</i>) has an arrow(connection) that goes to an element(<i>y</i>), then that element(<i>y</i>) has an arrow(connection) going to another element(<i>z</i>),
+then there must be a arrow(connection) from <i>x</i> to <i>z</i>.
+
+<br><br>
+Example 1 & 2(not transitive))
+<br>
+<img src="img/240-exp-60.png" alt="exp" class="re-size">
+<br>
+<img src="img/240-exp-61.png" alt="exp" class="re-size">
+<br><br>
+Example 3 & 4)
+<br>
+<img src="img/240-exp-62.png" alt="exp" class="re-size">
+</li>
+
+<h3>Directed graphs, paths, and cycles</h3>
+<li>
+A <b>graph</b> is a diagram of points and lines connected to the points. It has at least one line joining a set of two <b>vertices</b> with no vertex connecting itself.
+A <b>vertex</b> is a <u>point</u> where multiple lines meet, it is also called a <b>node</b>.
+An <b>edge</b> is the mathematical term for a <u>line</u> that connects two vertices.
+In a graph, if an edge is drawn from vertex to itself, it is called a <b>loop</b> (<b>self-loop</b>).
+<br><br>
+A <i>graph</i> <b>G</b> is defined as <b>G = (V, E)</b>, where V is a set of all vertices and E is a set of all edges in the graph.
+<br><br>
+
+The <b>degree</b> (<b><i>deg</i>(V)</b>) of a vertex is the number of vertices adjacent to a vertex <b>V</b>.
+A vertex can form an edge with all other vertices except by itself so the degree of a vertex will be up to the number of vertices in the graph minus 1, this 1 is for the self-vertex as it cannot form a loop by itself.
+Degree of vertex can be considered under two cases of graphs: <b>undirected graph</b> & <b>directed graph</b>. Undirected is with without <i>arrows</i>, directed is with <i>arrows</i>.
+<br><br>
+In a directed graph, each vertex has an <b>indegree</b> and an <b>outdegree</b>.
+<i>Indegree</i> of vertex V is the number of edges which are coming into the vertex V.
+<i>Outdegree</i> of vertex V is the number of edges which are going out from the vertex V.
+
+<br><br>
+Example 1)
+<br>
+<img src="img/240-exp-63.png" alt="exp" class="re-size">
+<br><br>
+A <b>walk</b> is defined as a finite length alternating sequence of vertices and edges.
+The total number of edges covered in a walk is called as <b>Length of the Walk</b>.
+<br><br>
+Example 1)
+<br>
+<img src="img/240-exp-64.png" alt="exp" class="re-size">
+<br><br>
+In graph theory, a walk can be considered a <b>open walk</b> or a <b>closed walk</b>, if length of the walk is greater than zero.
+A walk is an <i>open walk</i> if the vertices at which the walk starts and ends are different.
+A walk is an <i>closed walk</i> if the vertices at which the walk starts and ends are same.
+</li>
+
+<li>
+???? <br>
+- A <b>trail</b> is an open walk in which no edge occurs more than once. <br>
+- A <b>circuit</b> is a closed walk in which no edge occurs more than once. <br>
+- A <b>path</b> is a trail in which no vertex occurs more than once. <br>
+- A <b>cycle</b> is a circuit of length at least 1 in which no vertex occurs more than once, except the first and last vertices which are the same.
+</li>
+
+<h3>Composition of relations</h3>
+<li>
+Let <b><u>A, B, & C</b> be three sets</u>. Suppose that <u><b>R</b> is a relation</u> from A to B, and <u><b>S</b> is a relation</u> from B to C.
+The <b>composition</b> of R and S, denoted by <b>S◦R</b>, is a binary relation from A to C, if and only
+<b>if there is (ab∈B) such that aRb & bSc</b>.
+<br><br>
+Example 1)
+<br>
+<img src="img/240-exp-65.png" alt="exp" class="center">
+</li>
+
+<h3>Graph powers and the transitive closure</h3>
+
+<li>
+Book ??? : The <i>graph power theorem</i> ; let G be a directed graph. Let u and v be any two vertices in G. There is an edge from u to v in G<sup>k</sup> if and only if there is a walk of length k from u to v in G.
+
+<br><br>
+The edge set E of a directed graph G can be viewed as a relation. E<sup>k</sup> is the relation E composed with itself k times.
+The graph <b>G<sup>k</sup></b> is defined to be the directed graph whose edge set is E<sup>k</sup> and is called the k<sup>th</sup> <b>power of G</b>.
+The notation <b>(a, b, *, c)</b> used in the animation indicates a path of length 3 in which the first vertex is a, the second vertex is b, the fourth vertex is c, and the third vertex is unknown.
+
+<br><br>
+
+The union of G<sup>k</sup> for all k ≥ 1 (denoted G<sup>+</sup>) represents reachability by walks of any positive length in G. In taking the union of graphs, there is only one copy of the vertex set and the union is taken over the edge sets of the respective graphs.
+G<sup>+</sup> = G<sup>1</sup> ∪ G<sup>2</sup> ∪ G<sup>3</sup> ∪ G<sup>4</sup> .... (u, v) is an edge in G<sup>+</sup> if vertex v can be reached from vertex u in G by a walk of any length.
+While the expression given above for G<sup>+</sup> is an infinite union, if the vertex set is finite, then only graph powers up to |V| are required.
+Let G be a graph on a finite vertex set with n vertices.
+Then G<sup>+</sup> = G<sup>1</sup> ∪ G<sup>2</sup> ∪ G<sup>3</sup> ∪ ... ∪ G<sup>n</sup>.
+
+<br><br>
+The same definition holds for a relation R. Let R be a relation on a finite domain with n elements.
+Then R<sup>+</sup> = R<sup>1</sup> ∪ R<sup>2</sup> ∪ R<sup>3</sup> ∪ ... ∪ R<sup>n</sup>.
+The relation R<sup>+</sup> is called the <b>transitive closure of R</b> and is the smallest relation that is both transitive and includes all the pairs from R.
+In other words, any relation that contains all the pairs from R and is transitive must include all the pairs in R<sup>+</sup>.
+If G is a directed graph, then G<sup>+</sup> is called the <b>transitive closure of G</b>.
+<br><br>
+The proof of the Graph Power Theorem requires a technique called <b>induction</b> which is covered in more depth elsewhere.
+</li>
+
+<h3>Matrix multiplication and graph powers</h3>
+
+<li>
+Book ??? : An n × m <b>matrix</b> over a set S is an array of elements from S with n rows and m columns. Each element in a matrix is called an <b>entry</b>.
+The entry in <u>row i</u> and <u>column j</u> of <u>matrix A</u> is denoted by <b>A<sub>i,j</sub></b>. A matrix is called a <b>square matrix</b> if the number of rows is equal to the number of columns.
+<br><br>
+A directed graph G with n vertices can be represented by an n × n matrix over the set {0, 1} called the <b>adjacency matrix</b> for G.
+If matrix A is the adjacency matrix for a graph G, then A<sub>i,j</sub> = 1 if there is an edge from vertex i to vertex j in G. Otherwise, A<sub>i,j</sub> = 0.
+<br><br>
+A <b>Boolean matrix</b> is a matrix whose entries are from the set {0, 1}. Boolean addition and multiplication are used in adding and multiplying entries of a Boolean matrix.
+<br><br>
+ If A and B are n × n matrices, the <b>dot product</b> of row i of A and column j of B is the sum of the product of each entry in row i from A with the corresponding entry in column j
+ from B: <b>A<sub>i,1</sub>B<sub>1,j</sub>  +  A<sub>i,2</sub>B<sub>2,j</sub>  +  ....  +  A<sub>i,n</sub>B<sub>n,j</sub></b>.
+ If A and B are n × n matrices over the integers, then the <b>matrix product</b> of A and B, denoted AB or A·B, is another n × n matrix such that (AB)<sub>i,j</sub> is the result of taking the dot product of row i of matrix A and column j of matrix B.
+ <br><br>
+ Example )
+ <br>
+ <img src="img/240-exp-66.png" alt="exp" class="center">
+<br><br>
+The k<sup>th</sup> <b>power of a matrix</b> A is the product of k copies of A: <b>A<sup>k</sup> = A*A*A ... A</b>.
+If G is a directed graph, then the k<sup>th</sup> power of G (G<sup>k</sup>) represents walks of length k in G.
+There is an edge from vertex v to vertex w in G<sup>k</sup> if and only if there is a walk of length exactly k from v to w in G.
+
+<br><br>
+
+??? If A and B are two m × n matrices, then the <b>matrix sum</b> of A and B, denoted A + B, is also an m × n matrix such that (A + B)i,j = Ai,j + Bi,j for all 1 ≤ i ≤ m and 1 ≤ j ≤ n.
+
+
+</li>
+
+<h3>????Partial orders</h3>
+
+<li>
+????
+<br><br>
+A relation R on a set A is a <b>partial order</b> if it is reflexive, transitive, and anti-symmetric.
+The notation a ⪯ b is used to express aRb, reflecting the fact that a partial order acts like a ≤ operator on the elements of A. The expression a ⪯ b is read "a is at most b". The difference between the ⪯ and the ≤ symbols is the slight curve in the ⪯ symbol. The domain along with a partial order defined on it is denoted (A, ⪯) and is called a <b>partially ordered set</b> or <b>poset</b>.
+
+<br><br>
+
+Two elements of a partially ordered set, x and y, are said to be <b>comparable</b> if x ⪯ y or y ⪯ x. Otherwise they are said to be <b>incomparable</b>.
+A partial order is a <b>total order</b> if every two elements in the domain are comparable.
+The partial order (<b>Z</b>, ≤) is an example of a total order.
+
+<br><br>
+
+An element x is a <b>minimal</b> element if there is no y ≠ x such that y ⪯ x. An element x is a <b>maximal</b> element if there is no y ≠ x such that x ⪯ y.
+
+<br><br>
+
+A <b>Hasse diagram</b>, named after the 20th century German mathematician Helmut Hasse, is a useful way to depict a partial order on a finite set.
+
+
+</li>
+
+<h3>???? Strict orders and directed acyclic graphs</h3>
+
+<li>
+ A relation R is a <b>strict order</b> if R is transitive and anti-reflexive.
+Two elements, x and y, are said to be <b>comparable</b> if x ≺ y or y ≺ x.
+Otherwise, the elements are said to be <b>incomparable</b>.
+A strict order is a <b>total order</b> if every pair of elements is comparable.
+An element x is a <b>minimal</b> element if there is no y such that y ≺ x.
+An element x is a <b>maximal</b> element if there is no y such that x ≺ y.
+
+<br><br>
+
+A <b>directed acyclic graph</b> (or <b>DAG</b> for short) is a directed graph that has no cycles.
+
+<br><br>
+
+A <b>topological</b> sort for a DAG is an ordering of the vertices that is consistent with the edges in the graph.
+
+</li>
+
+<h3>Equivalence relations</h3>
+
+<li>
+A relation R is an <b>equivalence relation</b> if R is reflexive, symmetric, and transitive.
+
+<br><br>
+
+If A is the domain of an equivalence relation and a ∈ A, then [a] is defined to be the set of all x ∈ A such that a~x. The set [a] is called an <b>equivalence class</b>.
+
+<br><br>
+
+A <b>partition</b> of a set A is a set of non-empty subsets of A that are pairwise disjoint and whose union is A.
+
+<br><br>
+
+A set of sets is <b>pairwise disjoint</b> if the intersection of any pair of the sets is empty.
+
+</li>
+
+<h3>???? N-ary relations and relational databases</h3>
+
+<li>
+A relation on sets A<sub>1</sub>, A<sub>2</sub>, ..., A<sub>n</sub> is a subset of   A<sub>1</sub> x A<sub>2</sub>, x ... x A<sub>n</sub>.
+Each element of the relation is an n-tuple in which the i<sup>th</sup> entry in the n-tuple is from A<sub>i</sub>.
+A relation on n sets is called an <b>n-ary relation</b>.
+<br><br>
+
+A <b>database</b> is a large collection of data records that is searched and manipulated by a computer.
+The <b>relational database model</b> stores data records as relations.
+The type of data stored in each entry of the n-tuple is called an <b>attribute</b>.
+A <b>query</b> to a database is a request for a particular set of data.
+
+<br><br>
+
+A <b>key</b> is an attribute or set of attributes that uniquely identifies each n-tuple in the database.
+
+<br><br>
+
+The <b>selection operation</b> chooses n-tuples from a relational database that satisfy particular conditions on their attributes.
+
+<br><br>
+
+The <b>projection</b> operation takes a subset of the attributes and deletes all the other attributes in each of the n-tuples.
+
+</li>
+</div>
+
+<div class="example">
+    <h1 class="tittles space"> Chapter 7  </h1>
+
+    <h3>An introduction to algorithms</h3>
+
+    <li>
+
+      An <b>algorithm</b> is a step-by-step method for solving a problem. A description of an algorithm specifies the input to the problem, the output to the problem, and the sequence of steps to be followed to obtain the output from the input.
+      Algorithms are often described in <b>pseudocode</b>, which is a language in between written English and a computer language.
+      An important type of step in an algorithm is an <b>assignment</b>, in which a variable is given a value.
+      The output of an algorithm is specified by a <b>return</b> statement.
+
+    </li>
+
+    <li>
+      An <b>if-statement</b> tests a condition, and executes one or more instructions if the condition evaluates to true.
+      An <b>if-else-statement</b> tests a condition, executes one or more instructions if the condition evaluates to true, and executes a different set of instructions if the condition evaluates to false.
+
+    </li>
+
+    <li>
+      In a <b>for-loop</b>, a block of instructions is executed a fixed number of times as specified in the first line of the for-loop, which defines an <b>index</b>, a starting value for the index, and a final value for the index.
+      Each repetition of the block of instructions inside the for-loop is called an <b>iteration</b>.
+
+      <br><br>
+
+      A <b>while-loop</b> iterates an unknown number of times, ending when a certain condition becomes false.
+
+      <br><br>
+
+      A <b>nested loop</b> is a loop that appears within another loop.
+
+
+    </li>
+
+
+    <h3>Asymptotic growth of functions</h3>
+
+    <li>
+
+      The <b>asymptotic growth</b> of the function <b>f</b> is a measure of how fast the output <b>f(n)</b> grows as the input <b>n</b> grows.
+      The classification of functions using <b>Oh</b>, <b>Ω</b>, and <b>Θ</b> notation (called asymptotic notation) provides a way to concisely characterize the asymptotic growth of a function.
+
+    </li>
+    <li>
+
+      <b>Oh</b> or <b>Big-Oh</b> <b>(O)</b> notation gives an upper bound <b>g(n)</b> for a function <b>f(n)</b> that is more than or equal to <b>f(n)</b>,
+      if <b>constant factors</b> are omitted and small values for n are ignored.
+
+      <br><br>
+
+      We write <b>f(n) = O(g(n))</b>, if there are positive constants (<b>n<sub>0</sub></b>) and (<b>c</b>), such that to the right
+      of <i>n<sub>0</sub></i>, the f(n) always lies on or below <b>c*g(n)</b>.
+      The constants c and n<sub>0</sub> in the definition of Oh-notation are said to be a <b>witness</b> to the fact that f = O(g).
+
+      <br><br>
+
+      ??? <b>O(g(n))</b> = { f(n) : There exist positive constant c and n<sub>0</sub> such that 0 ≤ f(n) ≤ c*g(n), for all n ≥ n<sub>0</sub>}
+
+      <br><br>
+
+      <img src="img/240-exp-91.png" alt="exp" class="center">
+
+    </li>
+
+    <li>
+
+      <b>Big-Omega</b> (<b>Ω</b>) notation gives a lower bound for a function <b>f(n)</b> to within a constant factor.
+
+      We write <b>f(n) = Ω(g(n))</b>, if there are positive constants (<b>n<sub>0</sub></b>) and (<b>c</b>), such that to the right
+      of <i>n<sub>0</sub></i>, the f(n) always lies on or above <b>c*g(n)</b>.
+
+      <br><br>
+
+      ??? <b>Ω(g(n))</b> = { f(n) : There exist positive constant c and n<sub>0</sub> such that 0 ≤ c g(n) ≤ f(n), for all n ≥ n<sub>0</sub>}
+
+      <br><br>
+
+      <img src="img/240-exp-92.png" alt="exp" class="center">
+
+    </li>
+
+    <li>
+      <b>Big-Theta</b> (<b>Θ</b>) notation gives bound for a function <b>f(n)</b> to within a constant factor.
+
+      If <i>f = Θ(g)</i>, then <i>f</i> is said to be <b>order of</b> <i>g</i>.
+
+      <u>??? For example <i>f(n) = 4n<sup>3</sup> + 7n + 16</i> is order of <i>n<sup>3</sup></i>.
+        The terms <i>7n</i> and <i>16</i> are called the <b>lower order</b> terms of the function <i>f(n) = 4n<sup>3</sup> + 7n + 16</i> because removing those terms from f does not change the order of f.
+
+      </u>
+
+
+      We write <b>f(n) = Θ(g(n))</b>, if there are positive constants (<b>n<sub>0</sub></b>) and (<b>c1</b>) and (<b>c2</b>), such that to the right
+      of <i>n<sub>0</sub></i>, the f(n) always lies between <b>c1*g(n)</b> and <b>c2*g(n)</b> inclusive.
+
+      <br><br>
+
+      ???  <b>Θ(g(n))</b> = {f(n) : There exist positive constant c1, c2 and n<sub>0</sub> such that 0 ≤ c1 g(n) ≤ f(n) ≤ c2 g(n), for all n ≥ n<sub>0</sub>}
+
+      <br><br>
+
+      <img src="img/240-exp-93.png" alt="exp" class="center">
+
+      </li>
+
+      <li>
+        A function that does not depend on n at all is called a <b>constant function</b>.
+        A function f(n) is said to be <b>polynomial</b> if f(n) is Θ(n<sup>k</sup>) for some positive real number k.
+
+        <br><br>
+
+        <img src="img/240-exp-94.png" alt="exp" class="center">
+
+      </li>
+
+      <h3>??? Analysis of algorithms</h3>
+
+      <li>
+        The amount of resources used by an algorithm is referred to as the algorithm's <b>computational complexity</b>.
+        The primary resources to optimize are the time the algorithm requires to run (time complexity) and the amount of memory used (<b>space complexity</b>).
+
+        <br><br>
+
+        The <b>time complexity</b> of an algorithm is defined by a function f:<b>Z<sup>+</sup> → Z<sup>+</sup></b> such that f(n) is the maximum number of atomic operations performed by the algorithm on any input of size n.
+        <b>Z<sup>+</sup></b> is the set of positive integers.
+        The <b>asymptotic time complexity</b> of an algorithm is the rate of asymptotic growth of the algorithm's time complexity function f(n).
+
+
+        <br><br>
+        ???
+        <br>
+        <img src="img/240-exp-95.png" alt="exp" class="center">
+
+      </li>
+
+      <li>
+
+        The <b>worst-case analysis</b> of an algorithm evaluates the time complexity of the algorithm on the input of a particular size that takes the longest time.
+        The <b>worst-case</b> time complexity function f(n) is defined to be the maximum number of atomic operations the algorithm requires, where the maximum is taken over all inputs of size n.
+
+        <br><br>
+
+        When proving an <b>upper bound</b> on the worst-case complexity of an algorithm (using Oh-notation), the upper bound must apply for every input of size n.
+        When proving a <b>lower bound</b> for the worst-case complexity of an algorithm (using Ω notation), the lower bound need only apply for at least one possible input of size n.
+
+        <br><br>
+
+        <b>Average-case analysis</b> evaluates the time complexity of an algorithm by determining the average running time of the algorithm on a random input. Average case analysis uses probability theory to formally define a "random" input and is not covered in this material.
+
+      </li>
+
+      <li>
+
+        An algorithm is said to run in <b>polynomial time</b> if its time complexity is O(n<sup>k</sup>) for some fixed constant k.
+
+
+      </li>
+
+
+
+</div>
+
+
+
+
+
+
+<div class="example">
+  <h1 class="tittles space"> Chapter 8  </h1>
+
+<li>
+  <br>
+A <b>sequence</b> (<u>Starts at 1</u>) is a special type of function in which the domain is a set of consecutive integers.
+When a function is specified as a sequence, using subscripts to denote the input to the function is common.
+A value g<sub>k</sub> is called a <b>term</b> of a sequence, and <b>k</b> is the <b>index</b> of g<sub>k</sub>.
+
+
+
+<br><br>
+
+A sequence with a finite domain is called a <b>finite sequence</b> (<b>a<sub>m</sub>, a<sub>m+1</sub>, ..... , a<sub>n</sub></b>).
+In a finite sequence, there is an <b>initial index</b> (<b>m</b>)  and a <b>final index</b> (<b>n</b>), where <b>n ≥ m</b>.
+Then <b>a<sub>m</sub></b> is the <b>initial term</b> and <b>a<sub>n</sub></b> is the <b>final term</b>.
+
+<br><br>
+
+
+A sequence with an infinite domain is called an <b>infinite sequence</b>.
+In an infinite sequence, the indices go to infinity in the positive direction.
+There is an initial index <b>m</b>, and the sequence is defined for all indices <b>k</b> such that <b>k ≥ m</b> :
+(<b>a<sub>m</sub>, a<sub>m+1</sub>, a<sub>m+2</sub>, .....</b>)
+
+
+<br><br>
+
+A sequence can be specified by an <b>explicit formula</b> showing how the value of term a<sub>k</sub> depends on <b>k</b>.
+For example, <b>d<sub>k</sub> = 2<sup>k</sup></b> for <b>k ≥ 1</b>. The infinite sequence <b>{d<sub>k</sub>}</b> starts with: <b>2, 4, 8, 16, .... </b>
+
+
+</li>
+
+<li>
+<br>
+A sequence is <b>increasing</b> if for every two consecutive indices, k and k + 1, in the domain, a<sub>k</sub> < a<sub>k+1</sub>.
+A sequence is <b>non-decreasing</b> if for every two consecutive indices, k and k + 1, in the domain, a<sub>k</sub> ≤ a<sub>k+1</sub>.
+
+<br><br>
+Example 1)
+<br>
+<img src="img/240-exp-67.png" alt="exp" class="center">
+
+<br><br>
+
+A sequence is <b>decreasing</b> if for every two consecutive indices, k and k + 1, in the domain, a<sub>k</sub> > a<sub>k+1</sub>.
+A sequence is <b>non-increasing</b> if for every two consecutive indices, k and k + 1, in the domain, a<sub>k</sub> ≥ a<sub>k+1</sub>.
+
+<br><br>
+Example 1)
+<br>
+<img src="img/240-exp-68.png" alt="exp" class="center">
+
+<br><br>
+
+<br><br>
+Examples
+<br><br>
+<img src="img/240-exp-69.png" alt="exp" class="center">
+</li>
+
+<li>
+A <b>geometric sequence</b> is a sequence of real numbers where each term after the initial term is found by taking the previous term and multiplying by a fixed number called the <b>common ratio</b>.
+A geometric sequence can be finite or infinite.
+<br><br>
+Examples
+<br><br>
+<img src="img/240-exp-70.png" alt="exp" class="center">
+<br><br>
+
+
+
+
+An <b>arithmetic sequence</b> is a sequence of real numbers where each term after the initial term is found by taking the previous term and adding a fixed number called the <b>common difference</b>.
+An arithmetic sequence can be finite or infinite.
+
+
+</li>
+
+<h3>Recurrence relations</h3>
+
+<li>
+????? Book : A rule that defines a term an as a function of previous terms in the sequence is called a <b>recurrence relation</b>.
+<br><br>
+
+A <b>recurrence relation</b> is an equation that expresses a<sub>n</sub> in terms of one or more of the previous terms of the sequence.
+<b>Initial values/conditions</b> are required to specify terms that precede the firt term where the relation takes effect.
+
+<br><br>
+
+??? I compare both sides of the equation (=) comparing the initial value and recurrence. Next plug in both the index and given term to find "next" term.
+<br><br>
+
+<mark>Example 1</mark>)
+<br><br>
+where a<sub>0</sub>= 2 & a<sub>1</sub>= 5 (initial value)
+<br>
+a<sub>n</sub> = a<sub>n-1</sub> + 2a<sub>n-2</sub> for n ≥ 2 (recurrence relation)
+<br><br>
+
+<mark>Example 2</mark>)
+<br>
+<img src="img/240-exp-72.png" alt="exp" class="center">
+<br><br>
+
+
+
+</li>
+
+<li>
+The <b>Fibanacci Sequence</b> is a type of <i>recurrence relation</i>.
+The Fibonacci Sequence is the series of numbers where the next number is found by adding up the two numbers before it.
+</li>
+
+<li>
+Examples
+<br><br>
+where b<sub>0</sub>= 1 & b<sub>1</sub>= 1 (initial value)
+<br>
+b<sub>n</sub> = b<sub>n-1</sub> * b<sub>n-2</sub> + 2 for n ≥ 2 (recurrence relation)
+<br><br>
+b<sub>2</sub> = 1 * 1 + 2 ; b<sub>2</sub> = 3
+<br>
+b<sub>3</sub> = 3 * 1 + 2 ; b<sub>3</sub> = 5
+</li>
+
+<li>
+  ??? A <b>dynamical system</b> is a system that changes over time.
+In a <b>discrete time dynamical system</b>, time is divided into discrete time intervals and the state of the system stays fixed within each time interval.
+
+</li>
+
+<h3>Summations</h3>
+
+<li>
+<b>Summation notation</b>  is used to express the sum of terms in a numerical sequence.
+Consider a sequence: <b>a<sub>s</sub>, a<sub>s+1</sub>, ...... , a<sub>t</sub></b>.
+The notation to express the sum of the terms in that sequence is :
+
+<br><br>
+<img src="img/240-exp-73.png" alt="exp" class="center">
+<br><br>
+
+In the summation before the =, the variable <b>i</b> is called the <b>index</b> of the summation.
+The value <b>s</b> is the <b>lower limit</b> and <b>t</b> is the <b>upper limit</b> of the summation.
+Any variable name could be used for the index instead of i, but variables i, j, k, and l are the most common.
+The capital letter sigma <b>∑</b> is used to denote the fact that the terms are to be added together.
+
+<br><br>
+
+The part before the = (with the <i>∑</i>), is called the <b>summation form</b> of the sum, and the
+expression after the = (with the <i>a<sub>s</sub>, a<sub>s+1</sub>, ... </i>), is called the <b>expanded form</b> of the sum.
+
+<br><br>
+Examples)
+<br><br>
+<img src="img/240-exp-75.png" alt="exp" class="re-size">
+<br><br>
+
+<br><br>
+Example 3)
+<br><br>
+<img src="img/240-exp-74.png" alt="exp" class="center">
+<br><br>
+</li>
+
+<li>
+??? <b>Pulling out a final term from a summation</b>. In working with summations, it is often useful to pull out or add in a final term to a summation:
+<br><br>
+<img src="img/240-exp-77.png" alt="exp" class="center">
+<br><br>
+??? The drawing below illustrates the idea with an example. The expanded form of the sum is given to show why the two expressions are equal:
+<br><br>
+<img src="img/240-exp-76.png" alt="exp" class="center">
+
+<br><br>
+Examples
+<br><br>
+<img src="img/240-exp-78.png" alt="exp" class="center">
+<br><br>
+
+3)
+<br>
+<img src="img/240-exp-79.png" alt="exp" class="center">
+<br><br>
+
+4)
+<br>
+<img src="img/240-exp-80.png" alt="exp" class="center">
+<br><br>
+
+5)
+<br>
+<img src="img/240-exp-81.png" alt="exp" class="center">
+<br><br>
+</li>
+
+<li>
+??? <b>Change of variables in summations</b>.
+
+</li>
+
+<li>
+A <b>closed form</b> for a sum is a mathematical expression that expresses the value of the sum without summation notation.
+<br><br>
+Format :
+<br><br>
+<img src="img/240-exp-82.png" alt="exp" class="center">
+<br><br>
+
+
+Example)
+<br><br>
+<img src="img/240-exp-83.png" alt="exp" class="center">
+<br><br>
+
+Format :
+<br><br>
+<img src="img/240-exp-84.png" alt="exp" class="center">
+<br><br>
+
+
+Example)
+<br><br>
+<img src="img/240-exp-85.png" alt="exp" class="center">
+<br><br>
+
+</li>
+<li>
+Examples :
+<br><br>
+
+1)
+<br>
+<img src="img/240-exp-86.png" alt="exp" class="center">
+<br><br>
+
+2)
+<br>
+<img src="img/240-exp-87.png" alt="exp" class="center">
+<br><br>
+
+3)
+<br>
+<img src="img/240-exp-88.png" alt="exp" class="center">
+<br><br>
+
+4)
+<br>
+<img src="img/240-exp-89.png" alt="exp" class="center">
+</li>
+
+<h3>Mathematical induction</h3>
+
+<li>
+
+<b>Induction</b> is a proof technique that is especially useful for proving statements about elements in a sequence.
+An <i>inductive</i> proof establishes that some statement parameterized by <b>n</b> is true, for any positive integer <b>n</b>.
+The <b>principle of mathematical induction</b> states that if the <i><b>base case</b></i> (for n = 1) is true and <i><b>inductive step</b></i> is true, then the theorem holds for all positive integers.
+
+<br><br>
+
+The <b>base case</b> (<b>P(n)</b>) establishes that the theorem is true for the first value in the sequence.
+We use propositional statement <b>P</b> with <b>n</b> being the first term.
+
+
+<br><br>
+
+The <b>inductive step</b> (<b>inductive hypothesis</b>) {<b>P(k) true →  P(k+1)true</b>} introduces a new variable <b>k</b>.
+For <i>inductive case</i> if <i>P(n)</i> is true for n=<b>k</b>, then <i>P(n)</i> true for n=<b>k+1</b>.
+<br>
+???In the statement "S(k) implies S(k+1)" of the inductive step, the supposition that S(k) is true is called the <b>inductive hypothesis</b>.
+
+<br><br>
+
+Example 1)
+<br>
+<img src="img/240-exp-90.png" alt="exp" class="re-size">
+
+</li>
+
+<h3>????More inductive proofs</h3>
+
+<li>
+???
+</li>
+
+<h3>Strong induction and well-ordering</h3>
+
+<li>
+
+
+</li>
+
+</ul>
+      </div>
